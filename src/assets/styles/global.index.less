@@ -1,0 +1,27 @@
+@import (once) './util.less';
+
+@style: {
+    .global();
+
+    :root {
+        --big-screen-width: 1920px;
+        --design-draft-width: 1440px;
+        --header-height: 82px;
+        --footer-height: 192px;
+        --both-spacing: 116px;
+    }
+
+    #root {
+        max-width: var(--big-screen-width);
+        margin: 0 auto;
+    }
+
+    .common-section {
+        // margin-top: 88px;
+        padding: 0 160px;
+    }
+}
+
+;
+
+.pc(@style);

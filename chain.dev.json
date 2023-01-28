@@ -1,0 +1,13 @@
+{
+    "BSC": {
+        "chainId": "0x3",
+        "chainName": "Ropsten Test Network",
+        "nativeCurrency": {
+            "name": "ETH",
+            "symbol": "ETH",
+            "decimals": 18
+        },
+        "rpcUrls": ["https://ropsten.infura.io/v3/"],
+        "blockExplorerUrls": ["https://ropsten.etherscan.io/"]
+    }
+}

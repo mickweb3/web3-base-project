@@ -1,0 +1,94 @@
+@import (once) url('~@/assets/styles/util.less');
+
+@style: {
+    footer {
+        width: 100%;
+        min-height: var(--footer-height);
+        display: flex;
+        justify-content: space-between;
+        padding: 0 var(--both-spacing);
+        max-width: var(--design-draft-width);
+        margin: 100px auto 0 auto;
+
+        .we {
+            display: flex;
+            flex-direction: column;
+
+            .logo {
+                cursor: pointer;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 150%;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.04em;
+                color: #302b6c;
+                margin-top: 24px;
+            }
+
+            .media-list {
+                display: flex;
+                margin-top: 24px;
+            }
+
+            .media-item {
+                img {
+                    width: 36px;
+                }
+
+                &:nth-child(n + 2) {
+                    margin-left: 36px;
+                }
+            }
+        }
+
+        .navs {
+            display: flex;
+
+            h1 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                color: var(--primary-color);
+            }
+
+            .support,
+            .product {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    margin-top: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    display: flex;
+                    align-items: center;
+                    color: #4536AF;
+                    min-width: 130px;
+
+                    &.active,
+                    &:hover {
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .product {
+                margin-right: 82px;
+            }
+        }
+    }
+}
+
+;
+
+.pc(@style);
